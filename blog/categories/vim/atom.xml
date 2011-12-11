@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Ivice的技术博客]]></title>
-  <link href="http://ivice.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: VIM | Ivice的技术博客]]></title>
+  <link href="http://ivice.github.com/blog/categories/vim/atom.xml" rel="self"/>
   <link href="http://ivice.github.com/"/>
   <updated>2011-12-11T12:23:20+08:00</updated>
   <id>http://ivice.github.com/</id>
@@ -104,15 +104,6 @@ gvim报拦截到致命信号(deadly signal) SEGV
 <h3>10 最终效果</h3>
 
 <p>[img]http://l.ruby-china.org/photo/02718827d45dec0b060e1e7b416c94e2.png[/img]</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[学习Octopress架设blog]]></title>
-    <link href="http://ivice.github.com/blog/2011/12/11/study-octopress/"/>
-    <updated>2011-12-11T11:20:00+08:00</updated>
-    <id>http://ivice.github.com/blog/2011/12/11/study-octopress</id>
-    <content type="html"><![CDATA[<h3>架好了，感觉是一个完全自己掌控的博客，帅啊</h3>
 ]]></content>
   </entry>
   
