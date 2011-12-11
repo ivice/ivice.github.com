@@ -120,14 +120,14 @@ libc6-dev xclip ncurses-dev automake</code></p>
 
 <h3>3 安装ruby</h3>
 
-<p><code>rvm install 1.9.2</code>
-编译yaml-0.1.4时出错，报缺libtool
+<p><code>rvm install 1.9.2</code><br/>
+编译yaml-0.1.4时出错，报缺libtool<br/>
 <code>sudo apt-get install libtool</code></p>
 
 <h3>4 安装rails</h3>
 
-<p><code>rvm gemset create rails313</code>
-<code>rvm use 1.9.2@rails313 --default</code>
+<p><code>rvm gemset create rails313</code><br/>
+<code>rvm use 1.9.2@rails313 --default</code><br/>
 <code>gem install rails --no-ri --no-rdoc</code></p>
 
 <h3>5 配置vim</h3>
@@ -138,34 +138,41 @@ libc6-dev xclip ncurses-dev automake</code></p>
 
 <h4>解决gvim在Ubuntu 11.10中导致电脑很卡的问题**</h4>
 
-<p>运行：
-<code>echo 'alias gvim="gvim -f"' &gt;&gt; ~/.bashrc</code>
+<p>运行：<br/>
+<code>echo 'alias gvim="gvim -f"' &gt;&gt; ~/.bashrc</code><br/>
 <code>source ~/.bashrc</code></p>
 
 <h4>解决提示“pixmap”的问题</h4>
 
 <p>如果终端中提示：
-(gvim:2353): Gtk-WARNING **: 无法在模块路径中找到主题引擎：“pixmap”，
-解决方法是运行：
+(gvim:2353): Gtk-WARNING **: 无法在模块路径中找到主题引擎：“pixmap”<br/>
+解决方法是运行：<br/>
 <code>sudo apt-get install gtk2-engines-pixbuf</code></p>
 
 <h3>7 配置vim插件</h3>
 
-<p><code>curl https://raw.github.com/SaitoWu/janus/master/bootstrap.sh -o - | sh</code>
-感谢SaitoWu同学迁移到linux环境
-执行到最后报段错误
-gvim报拦截到致命信号(deadly signal) SEGV
+<p><code>curl https://raw.github.com/SaitoWu/janus/master/bootstrap.sh -o - | sh</code></p>
+
+<p>感谢SaitoWu同学迁移到linux环境<br/>
+执行到最后报段错误:<br/>
+gvim报拦截到致命信号(deadly signal) SEGV<br/>
 发现是command-t和ruby 1.9.2的冲突</p>
 
-<p>安装系统自带ruby
-<code>sudo apt-get install ruby</code>
-<code>sudo apt-get install ruby1.8-dev</code>
-删除.vim/plugin/command-t.vim 在～/.vim/下重新rake。修复。</p>
+<p>安装系统自带ruby<br/>
+<code>sudo apt-get install ruby</code><br/>
+<code>sudo apt-get install ruby1.8-dev</code><br/>
+删除~/.vim/plugin/command-t.vim，在～/.vim/下重新rake。修复。</p>
+
+<p>再次碰到错误：<br/>
+Taglist: Exuberant ctags (http://ctags.sf.net) not found in PATH. Plugin is not loaded.
+请按 ENTER 或其它命令继续</p>
+
+<p>执行：<code>sudo apt-get install exuberant-ctags</code></p>
 
 <h3>8 安装Monaco字体</h3>
 
-<p>下载monaco.ttf
-放入/usr/share/fonts/truetype
+<p>下载monaco.ttf<br/>
+放入/usr/share/fonts/truetype<br/>
 <code>sudo fs-cache -fv</code></p>
 
 <h3>9 修改.gvimrc加入字体设置</h3>
@@ -174,7 +181,7 @@ gvim报拦截到致命信号(deadly signal) SEGV
 
 <h3>10 最终效果</h3>
 
-<p>[img]http://l.ruby-china.org/photo/02718827d45dec0b060e1e7b416c94e2.png[/img]</p>
+<p><img src="http://l.ruby-china.org/photo/02718827d45dec0b060e1e7b416c94e2.png"></p>
 </div>
 
 
@@ -227,6 +234,12 @@ gvim报拦截到致命信号(deadly signal) SEGV
   </footer>
 </article>
 
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
 </div>
 
 <aside class="sidebar">
@@ -264,6 +277,22 @@ gvim报拦截到致命信号(deadly signal) SEGV
 
 </footer>
   
+
+<script type="text/javascript">
+      var disqus_shortname = 'ivicetechblog';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://ivice.github.com/blog/2011/12/11/build-rails-vim-env-for-ubuntu-11-dot-10/';
+        var disqus_url = 'http://ivice.github.com/blog/2011/12/11/build-rails-vim-env-for-ubuntu-11-dot-10/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
 
 
 
